@@ -50,25 +50,11 @@
 
 /* Theme-dependent rendering */
 
-.light-theme .navbar-logo-icon.dark {
+.light-theme .dark {
 	display: none; /* Hide the dark mode logo */
 }
-.dark-theme .navbar-logo-icon.light {
+.dark-theme .light {
 	display: none; /* Hide the light mode logo */
-}
-
-.light-theme .theme-icon.dark {
-	display: none; /* Hide the dark mode theme icon */
-}
-.dark-theme .theme-icon.light {
-	display: none; /* Hide the light mode theme icon */
-}
-
-.light-theme .navbar-menu-icon.dark {
-	display: none; /* Hide the dark mode menu icon */
-}
-.dark-theme .navbar-menu-icon.light {
-	display: none; /* Hide the light mode menu icon */
 }
 
 /* Body Styling */
@@ -145,7 +131,7 @@ a:active {
 	display: flex;
 	justify-content: space-between;
 	height: 70px;
-
+	
 	background-color: var(--navbar-back);
 }
 
@@ -307,18 +293,15 @@ a:active {
 .navbar-dropdown-button-content:hover,
 .navbar-dropdown-button-content:active {
 	color: var(--navbar-text);
+	box-shadow: var(--shadow);
 }
 
 .navbar-dropdown-button-content:hover {
 	background-color: var(--navbar-hover-back);
-	color: var(--navbar-text);
-	box-shadow: var(--shadow);
 }
 
 .navbar-dropdown-button-content:active {
 	background-color: var(--navbar-active-back);
-	color: var(--navbar-text);
-	box-shadow: var(--shadow);
 }
 
 .navbar-button:hover .navbar-dropdown {

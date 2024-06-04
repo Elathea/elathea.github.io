@@ -7,8 +7,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		document.documentElement.classList.add(`${theme}-theme`);
 	}
 
-	applyTheme(currentTheme);
-
 	themeToggleButton.addEventListener('click', function () {
 		currentTheme = currentTheme === 'light' ? 'dark' : 'light';
 		localStorage.setItem('theme', currentTheme);
